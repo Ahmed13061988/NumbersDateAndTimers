@@ -254,3 +254,5 @@ btnSort.addEventListener('click', function (e) {
 
 console.log(23 === 23.0);
 // All numbers in JavaScript are decimal
+
+console.log(0.1 + 0.2);
