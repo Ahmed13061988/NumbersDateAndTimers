@@ -281,3 +281,9 @@ console.log(Number.isInteger('20'));
 console.log(Number.isInteger(20));
 console.log(Number.isInteger('20X'));
 console.log(Number.isInteger(20 / 0));
+console.log(Number.isInteger(2.2));
+
+console.log(Math.sqrt(34));
+console.log(8 ** (1 / 3));
+
+console.log(Math.max(1, 4, 7, 3, 9));
