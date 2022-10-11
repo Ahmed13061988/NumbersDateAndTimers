@@ -308,3 +308,6 @@ console.log(Math.round(23.55));
 console.log(Math.ceil(23.98));
 
 console.log(Math.floor(23.9));
+
+console.log((2.3).toFixed(0));
+console.log((2.3).toFixed(3));
