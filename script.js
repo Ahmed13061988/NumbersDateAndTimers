@@ -293,3 +293,5 @@ console.log(Math.min(1, 2, 3, 4, 9, 0));
 
 console.log(Math.PI);
 console.log(Math.PI * parseInt('10px') ** 2);
+
+console.log(Math.trunc(Math.random() * 6 + 1));
