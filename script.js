@@ -287,3 +287,6 @@ console.log(Math.sqrt(34));
 console.log(8 ** (1 / 3));
 
 console.log(Math.max(1, 4, 7, 3, 9));
+console.log(Math.max(1, 4, 7, 3, 9, '23'));
+console.log(Math.max(1, 4, 7, 3, 9, '23px'));
+console.log(Math.min(1, 2, 3, 4, 9, 0));
