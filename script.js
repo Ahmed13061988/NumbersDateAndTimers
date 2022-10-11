@@ -267,8 +267,17 @@ console.log(Number.parseInt('30px'));
 console.log(Number.parseFloat('2.5rem'));
 console.log(Number.parseInt('2.5rem'));
 
+//check if value is not a number(NaN)
 console.log(Number.isNaN(20));
 console.log(Number.isNaN(+'20X'));
 console.log(Number.isNaN(20 / 0));
+
+//checking if the value is a number
 console.log(Number.isFinite(20));
 console.log(Number.isFinite('20'));
+console.log(Number.isFinite(20 / 0));
+
+console.log(Number.isInteger('20'));
+console.log(Number.isInteger(20));
+console.log(Number.isInteger('20X'));
+console.log(Number.isInteger(20 / 0));
