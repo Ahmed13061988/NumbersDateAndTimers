@@ -266,3 +266,5 @@ console.log(Number.parseInt('30px'));
 
 console.log(Number.parseFloat('2.5rem'));
 console.log(Number.parseInt('2.5rem'));
+
+console.log(Number.isNaN(20));
