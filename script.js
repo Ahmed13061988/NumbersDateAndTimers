@@ -290,3 +290,6 @@ console.log(Math.max(1, 4, 7, 3, 9));
 console.log(Math.max(1, 4, 7, 3, 9, '23'));
 console.log(Math.max(1, 4, 7, 3, 9, '23px'));
 console.log(Math.min(1, 2, 3, 4, 9, 0));
+
+console.log(Math.PI);
+console.log(Math.PI * parseInt('10px') ** 2);
