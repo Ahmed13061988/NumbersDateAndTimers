@@ -317,3 +317,7 @@ console.log(+(2.3).toFixed(3));
 const diameter = 287_460_000_000;
 
 console.log(diameter);
+
+const prizeCents = 345_99;
+
+console.log(prizeCents);
