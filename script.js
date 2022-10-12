@@ -314,4 +314,4 @@ console.log(+(2.3).toFixed(3));
 
 //Numeric separators
 
-const diameter = 2874600000000;
+const diameter = 287_460_000_000;
