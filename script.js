@@ -323,3 +323,7 @@ const prizeCents = 345_99;
 console.log(prizeCents);
 
 const transferFee = 15_00;
+
+const PI = 3.1415;
+
+console.log(PI);
