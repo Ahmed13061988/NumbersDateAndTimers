@@ -321,3 +321,5 @@ console.log(diameter);
 const prizeCents = 345_99;
 
 console.log(prizeCents);
+
+const transferFee = 15_00;
