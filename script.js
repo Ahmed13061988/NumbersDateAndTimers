@@ -329,3 +329,9 @@ const PI = 3.1415;
 console.log(PI);
 
 console.log(Number('230_000'));
+
+//Reminder operator
+
+console.log(5 % 2);
+
+console.log(4 % 2);
