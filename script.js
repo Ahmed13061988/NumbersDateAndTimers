@@ -349,12 +349,11 @@ const isEven = num => (num % 2 === 0 ? true : false);
 console.log(isEven(7));
 console.log(isEven(8));
 
-const rows = [...document.querySelectorAll('.movements__row')].forEach(
-  (row, index) => {
+labelBalance.addEventListener('click', function (e) {
+  e.preventDefault();
+  [...document.querySelectorAll('.movements__row')].forEach((row, index) => {
     if (index % 2 === 0) {
       row.style.backgroundColor = 'orangered';
     }
-  }
-);
-
-console.log(rows);
+  });
+});
