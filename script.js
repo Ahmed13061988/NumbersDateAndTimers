@@ -348,3 +348,7 @@ const isEven = num => (num % 2 === 0 ? true : false);
 
 console.log(isEven(7));
 console.log(isEven(8));
+
+const rows = document.querySelectorAll('.movements__row');
+
+console.log(rows);
