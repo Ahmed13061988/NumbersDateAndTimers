@@ -343,3 +343,8 @@ console.log(4 % 2);
 console.log(6 % 2);
 
 console.log(7 % 2);
+
+const isEven = num => (num % 2 === 0 ? true : false);
+
+console.log(isEven(7));
+console.log(isEven(8));
