@@ -334,4 +334,6 @@ console.log(Number('230_000'));
 
 console.log(5 % 2);
 
+console.log(5 / 2);
+
 console.log(4 % 2);
