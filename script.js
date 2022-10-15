@@ -337,3 +337,9 @@ console.log(5 % 2);
 console.log(5 / 2);
 
 console.log(4 % 2);
+
+// We can check if the number is even or odd
+
+console.log(6 % 2);
+
+console.log(7 % 2);
