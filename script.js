@@ -355,5 +355,9 @@ labelBalance.addEventListener('click', function (e) {
     if (index % 2 === 0) {
       row.style.backgroundColor = 'orangered';
     }
+
+    if (index % 3 === 0) {
+      row.style.backgroundColor = 'black';
+    }
   });
 });
