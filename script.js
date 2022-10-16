@@ -371,3 +371,4 @@ console.log(2 ** 53 + 5);
 console.log(12424897442389021385703212); // We can't log this number because it's bigger that 2 ** 53 -1
 
 console.log(12424897442389021385703212n); // this will log the number as a big integer
+console.log(BigInt(12424897442389021385703212));
