@@ -380,4 +380,4 @@ console.log(342343412434343124342n * 1090984308945832n);
 const huge = 234343534342n;
 const num = 44;
 
-console.log(huge * num); // this will throw an error because we cannot mix BigInt with other types
+console.log(huge * BigInt(num)); // this will throw an error because we cannot mix BigInt with other types
