@@ -357,7 +357,9 @@ labelBalance.addEventListener('click', function (e) {
     }
 
     if (index % 3 === 0) {
-      row.style.backgroundColor = 'black';
+      row.style.backgroundColor = 'blue';
     }
   });
 });
+
+//Working with BigInt
