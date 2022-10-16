@@ -381,3 +381,6 @@ const huge = 234343534342n;
 const num = 44;
 
 console.log(huge * BigInt(num)); // this will throw an error because we cannot mix BigInt with other types
+
+console.log(20n > 15);
+console.log(20n === 20);
