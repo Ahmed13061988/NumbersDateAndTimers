@@ -372,3 +372,5 @@ console.log(12424897442389021385703212); // We can't log this number because it'
 
 console.log(12424897442389021385703212n); // this will log the number as a big integer
 console.log(BigInt(12424897442389021385703212));
+
+console.log(10000n + 10000n);
