@@ -388,3 +388,6 @@ console.log(typeof 20n); // BigInt
 console.log(20n == 20); // true
 
 console.log(huge + ' is REALLY BIG');
+
+//Divisions
+console.log(10n / 3n); // it will cut the decimal part here
