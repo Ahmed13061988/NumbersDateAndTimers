@@ -374,3 +374,10 @@ console.log(12424897442389021385703212n); // this will log the number as a big i
 console.log(BigInt(12424897442389021385703212));
 
 console.log(10000n + 10000n);
+
+console.log(342343412434343124342n * 1090984308945832n);
+
+const huge = 234343534342n;
+const num = 44;
+
+console.log(huge * num); // this will throw an error because we cannot mix BigInt with other types
