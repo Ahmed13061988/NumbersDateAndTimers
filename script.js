@@ -392,4 +392,6 @@ console.log(huge + ' is REALLY BIG');
 //Divisions
 console.log(10n / 3n); // it will cut the decimal part here
 
+console.log(100n / 3n);
+
 // The big integer uses very rare
