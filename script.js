@@ -405,3 +405,7 @@ labelBalance.addEventListener('click', function (e) {
 const now = new Date();
 
 console.log(now);
+
+console.log(new Date('Oct 18 2022 19:24:56'));
+
+console.log(new Date('December 24, 2015'));
