@@ -160,6 +160,8 @@ currentAccount = account1;
 updateUI(currentAccount);
 containerApp.style.opacity = 100;
 
+const now = new Date();
+
 btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
   e.preventDefault();
@@ -406,8 +408,6 @@ labelBalance.addEventListener('click', function (e) {
 //Create a date
 
 //1 -
-
-const now = new Date();
 
 // console.log(now);
 
