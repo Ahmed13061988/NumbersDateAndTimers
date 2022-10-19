@@ -427,3 +427,10 @@ console.log(future.getHours());
 console.log(future.getMinutes());
 console.log(future.getSeconds());
 console.log(future.toISOString());
+console.log(future.getTime());
+// console.log(new Date(2141964000000));
+
+console.log(Date.now());
+
+future.setFullYear(2024);
+console.log(future);
