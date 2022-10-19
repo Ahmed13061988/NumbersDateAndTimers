@@ -155,6 +155,11 @@ const updateUI = function (acc) {
 // Event handlers
 let currentAccount;
 
+//Fake always logged in
+currentAccount = account1;
+updateUI(currentAccount);
+containerApp.style.opacity = 100;
+
 btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
   e.preventDefault();
@@ -418,19 +423,19 @@ const now = new Date();
 
 //Working with dates
 
-const future = new Date(2037, 10, 15, 23);
-console.log(future);
-console.log(future.getMonth());
-console.log(future.getDate());
-console.log(future.getDay());
-console.log(future.getHours());
-console.log(future.getMinutes());
-console.log(future.getSeconds());
-console.log(future.toISOString());
-console.log(future.getTime());
-// console.log(new Date(2141964000000));
+// const future = new Date(2037, 10, 15, 23);
+// console.log(future);
+// console.log(future.getMonth());
+// console.log(future.getDate());
+// console.log(future.getDay());
+// console.log(future.getHours());
+// console.log(future.getMinutes());
+// console.log(future.getSeconds());
+// console.log(future.toISOString());
+// console.log(future.getTime());
+// // console.log(new Date(2141964000000));
 
-console.log(Date.now());
+// console.log(Date.now());
 
-future.setFullYear(2024);
-console.log(future);
+// future.setFullYear(2024);
+// console.log(future);
