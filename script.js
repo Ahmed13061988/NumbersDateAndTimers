@@ -364,34 +364,40 @@ labelBalance.addEventListener('click', function (e) {
 
 //Working with BigInt
 
-console.log(2 ** 53 - 1);
-console.log(Number.MAX_SAFE_INTEGER);
-console.log(2 ** 53 + 5);
+// console.log(2 ** 53 - 1);
+// console.log(Number.MAX_SAFE_INTEGER);
+// console.log(2 ** 53 + 5);
 
-console.log(12424897442389021385703212); // We can't log this number because it's bigger that 2 ** 53 -1
+// console.log(12424897442389021385703212); // We can't log this number because it's bigger that 2 ** 53 -1
 
-console.log(12424897442389021385703212n); // this will log the number as a big integer
-console.log(BigInt(12424897442389021385703212));
+// console.log(12424897442389021385703212n); // this will log the number as a big integer
+// console.log(BigInt(12424897442389021385703212));
 
-console.log(10000n + 10000n);
+// console.log(10000n + 10000n);
 
-console.log(342343412434343124342n * 1090984308945832n);
+// console.log(342343412434343124342n * 1090984308945832n);
 
-const huge = 234343534342n;
-const num = 44;
+// const huge = 234343534342n;
+// const num = 44;
 
-console.log(huge * BigInt(num)); // this will throw an error because we cannot mix BigInt with other types
+// console.log(huge * BigInt(num)); // this will throw an error because we cannot mix BigInt with other types
 
-console.log(20n > 15);
-console.log(20n === 20); // false
-console.log(typeof 20n); // BigInt
-console.log(20n == 20); // true
+// console.log(20n > 15);
+// console.log(20n === 20); // false
+// console.log(typeof 20n); // BigInt
+// console.log(20n == 20); // true
 
-console.log(huge + ' is REALLY BIG');
+// console.log(huge + ' is REALLY BIG');
 
-//Divisions
-console.log(10n / 3n); // it will cut the decimal part here
+// //Divisions
+// console.log(10n / 3n); // it will cut the decimal part here
 
-console.log(100n / 3n);
+// console.log(100n / 3n);
 
 // The big integer uses very rare
+
+// Dates and Time in JavaScript
+
+//Create a date
+
+//1 -
