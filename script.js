@@ -401,3 +401,7 @@ labelBalance.addEventListener('click', function (e) {
 //Create a date
 
 //1 -
+
+const now = new Date();
+
+console.log(now);
