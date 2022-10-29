@@ -163,7 +163,7 @@ containerApp.style.opacity = 100;
 const now = new Date();
 
 const day = now.getDay();
-const month = now.getMonth();
+const month = now.getMonth() + 1; //Because the month is zero based so we need to add 1
 const year = now.getFullYear();
 
 labelDate.textContent = `${day}/${month}/${year}`;
