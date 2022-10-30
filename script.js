@@ -164,9 +164,11 @@ const now = new Date();
 
 const day = now.getDay();
 const month = now.getMonth() + 1; //Because the month is zero based so we need to add 1
+const hours = now.getHours();
+const minutes = now.getMinutes();
 const year = now.getFullYear();
 
-labelDate.textContent = `${day}/${month}/${year}`;
+labelDate.textContent = `${day}/${month}/${year}, ${hours}:${minutes} `;
 
 btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
