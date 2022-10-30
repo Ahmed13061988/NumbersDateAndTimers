@@ -447,3 +447,18 @@ labelBalance.addEventListener('click', function (e) {
 //Adding another comments
 //Adding another comments
 //Adding another comments
+
+const array = [1, 2, 3];
+const target = 3;
+
+const findIndex = function (array) {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      if (array[i] + array[j] === target) {
+        console.log(array.indexOf(array[i]));
+      }
+    }
+  }
+};
+
+findIndex(array);
