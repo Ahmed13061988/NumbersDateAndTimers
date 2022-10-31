@@ -91,7 +91,7 @@ const displayMovements = function (acc, sort = false) {
   movs.forEach(function (mov, i) {
     const type = mov > 0 ? 'deposit' : 'withdrawal';
     const date = new Date(acc.movementsDates[i]);
-    const day = `${date.getDay()}`.padStart(2, 0);
+    const day = `${date.getDate()}`.padStart(2, 0);
     const month = `${date.getMonth() + 1}`.padStart(2, 0); //Because the month is zero based so we need to add 1
     const year = date.getFullYear();
     const displayDate = `${day}/${month}/${year}`;
@@ -169,7 +169,7 @@ updateUI(currentAccount);
 containerApp.style.opacity = 100;
 
 const now = new Date();
-const day = `${now.getDay()}`.padStart(2, 0);
+const day = `${now.getDate()}`.padStart(2, 0);
 const month = `${now.getMonth() + 1}`.padStart(2, 0); //Because the month is zero based so we need to add 1
 const hours = now.getHours();
 const minutes = now.getMinutes();
