@@ -168,15 +168,6 @@ currentAccount = account1;
 updateUI(currentAccount);
 containerApp.style.opacity = 100;
 
-const now = new Date();
-const day = `${now.getDate()}`.padStart(2, 0);
-const month = `${now.getMonth() + 1}`.padStart(2, 0); //Because the month is zero based so we need to add 1
-const hours = now.getHours();
-const minutes = now.getMinutes();
-const year = now.getFullYear();
-
-labelDate.textContent = `${day}/${month}/${year}, ${hours}:${minutes} `;
-
 btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
   e.preventDefault();
@@ -192,6 +183,14 @@ btnLogin.addEventListener('click', function (e) {
       currentAccount.owner.split(' ')[0]
     }`;
     containerApp.style.opacity = 100;
+    //Current Date and Time
+    const now = new Date();
+    const day = `${now.getDate()}`.padStart(2, 0);
+    const month = `${now.getMonth() + 1}`.padStart(2, 0); //Because the month is zero based so we need to add 1
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const year = now.getFullYear();
+    labelDate.textContent = `${day}/${month}/${year}, ${hours}:${minutes} `;
 
     // Clear input fields
     inputLoginUsername.value = inputLoginPin.value = '';
