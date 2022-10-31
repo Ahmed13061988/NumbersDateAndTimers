@@ -94,7 +94,7 @@ const displayMovements = function (acc, sort = false) {
     const day = `${date.getDay()}`.padStart(2, 0);
     const month = `${date.getMonth() + 1}`.padStart(2, 0); //Because the month is zero based so we need to add 1
     const year = date.getFullYear();
-    const displayDate = `${day}/${month}/${year}, ${hours}:${minutes}`;
+    const displayDate = `${day}/${month}/${year}`;
 
     const html = `
       <div class="movements__row">
@@ -266,7 +266,7 @@ btnClose.addEventListener('click', function (e) {
 let sorted = false;
 btnSort.addEventListener('click', function (e) {
   e.preventDefault();
-  displayMovements(acc, !sorted);
+  displayMovements(account1, !sorted);
   sorted = !sorted;
 });
 
