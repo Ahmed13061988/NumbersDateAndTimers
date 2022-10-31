@@ -187,8 +187,8 @@ btnLogin.addEventListener('click', function (e) {
     const now = new Date();
     const day = `${now.getDate()}`.padStart(2, 0);
     const month = `${now.getMonth() + 1}`.padStart(2, 0); //Because the month is zero based so we need to add 1
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
+    const hours = `${now.getHours()}`.padStart(2, 0);
+    const minutes = `${now.getMinutes()}`.padStart(2, 0);
     const year = now.getFullYear();
     labelDate.textContent = `${day}/${month}/${year}, ${hours}:${minutes} `;
 
