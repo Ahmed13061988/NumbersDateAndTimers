@@ -92,7 +92,7 @@ const formatMovementDate = function (date) {
   if (dayPassed <= 7) return `${dayPassed} days ago`;
   else {
     const day = `${date.getDate()}`.padStart(2, 0);
-    const month = `${date.getMonth() + 1}`.padStart(2, 0); //Because the month is zero based so we need to add 1
+    const month = `${date.getMonth() + 1}`.padStart(2, 0);
     const year = date.getFullYear();
     return `${day}/${month}/${year}`;
   }
