@@ -482,3 +482,9 @@ const findIndex = function (array) {
 };
 
 findIndex(array);
+
+//Calculation date
+
+const future = new Date(2037, 11, 15, 20);
+
+console.log(future);
