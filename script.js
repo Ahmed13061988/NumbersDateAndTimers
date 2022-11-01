@@ -87,10 +87,15 @@ const formatMovementDate = function (date) {
 
   const dayPassed = calcDaysDiff(new Date(), date);
   console.log(dayPassed);
-  const day = `${date.getDate()}`.padStart(2, 0);
-  const month = `${date.getMonth() + 1}`.padStart(2, 0); //Because the month is zero based so we need to add 1
-  const year = date.getFullYear();
-  return `${day}/${month}/${year}`;
+  if (dayPassed === 0) return 'Today';
+  if (dayPassed === 1) return 'Yesterday';
+  if (dayPassed <= 7) return `${dayPassed} days ago`;
+  else {
+    const day = `${date.getDate()}`.padStart(2, 0);
+    const month = `${date.getMonth() + 1}`.padStart(2, 0); //Because the month is zero based so we need to add 1
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  }
 };
 
 const displayMovements = function (acc, sort = false) {
