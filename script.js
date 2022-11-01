@@ -487,4 +487,4 @@ findIndex(array);
 
 const future = new Date(2037, 11, 15, 20);
 
-console.log(future);
+console.log(+future); // --> THIS WILL BE CONVERTED INTO MILLISECONDS
