@@ -83,8 +83,10 @@ const inputClosePin = document.querySelector('.form__input--pin');
 
 const formatMovementDate = function (date) {
   const calcDaysDiff = (date1, date2) =>
-    Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
+    Math.round(Math.abs(date2 - date1) / (1000 * 60 * 60 * 24));
 
+  const dayPassed = calcDaysDiff(new Date(), date);
+  console.log(dayPassed);
   const day = `${date.getDate()}`.padStart(2, 0);
   const month = `${date.getMonth() + 1}`.padStart(2, 0); //Because the month is zero based so we need to add 1
   const year = date.getFullYear();
@@ -500,5 +502,4 @@ console.log(+future); // --> THIS WILL BE CONVERTED INTO MILLISECONDS
 //const calcDaysDiff = (date1, date2) =>
 //Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
 
-const days1 = calcDaysDiff(new Date(2037, 3, 14), new Date(2037, 3, 24));
-console.log(days1);
+//const days1 = calcDaysDiff(new Date(2037, 3, 14), new Date(2037, 3, 24));
