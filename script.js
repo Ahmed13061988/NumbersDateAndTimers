@@ -291,6 +291,12 @@ btnSort.addEventListener('click', function (e) {
 
 //Experimenting with API
 const now = new Date();
+
+const options = {
+  hours: 'numeric',
+  minute: 'numeric',
+};
+
 labelDate.textContent = new Intl.DateTimeFormat('en-US').format(now);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
