@@ -547,6 +547,6 @@ const options1 = {
   unit: 'mile-per-hour',
 };
 console.log('US:', new Intl.NumberFormat('en-US', options1).format(num));
-console.log('Germany:', new Intl.NumberFormat('de-DE').format(num));
-console.log('Syria:', new Intl.NumberFormat('ar-SY').format(num));
+console.log('Germany:', new Intl.NumberFormat('de-DE', options1).format(num));
+console.log('Syria:', new Intl.NumberFormat('ar-SY', options1).format(num));
 console.log('US:', new Intl.NumberFormat(navigator.language).format(num));
