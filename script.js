@@ -540,7 +540,8 @@ console.log(+future); // --> THIS WILL BE CONVERTED INTO MILLISECONDS
 //const days1 = calcDaysDiff(new Date(2037, 3, 14), new Date(2037, 3, 24));
 
 const num = 388476.33;
-
+navigator.language;
 console.log('US:', new Intl.NumberFormat('en-US').format(num));
 console.log('Germany:', new Intl.NumberFormat('de-DE').format(num));
 console.log('Syria:', new Intl.NumberFormat('ar-SY').format(num));
+console.log('US:', new Intl.NumberFormat(navigator.language).format(num));
