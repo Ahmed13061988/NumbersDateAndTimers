@@ -226,9 +226,8 @@ btnLogin.addEventListener('click', function (e) {
       hour: 'numeric',
       minute: 'numeric',
       day: 'numeric',
-      month: 'long',
+      month: 'numeric',
       year: 'numeric',
-      weekday: 'long',
     };
 
     labelDate.textContent = new Intl.DateTimeFormat(
