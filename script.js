@@ -147,7 +147,11 @@ const displayMovements = function (acc, sort = false) {
 
 const calcDisplayBalance = function (acc) {
   acc.balance = acc.movements.reduce((acc, mov) => acc + mov, 0);
-  labelBalance.textContent = `${acc.balance}€`;
+  //labelBalance.textContent = `${acc.balance}€`;
+  labelBalance.textContent = new Intl.NumberFormat(acc.locale, {
+    style: 'currency',
+    currency: acc.currency,
+  }).format(acc.balance);
 };
 
 const calcDisplaySummary = function (acc) {
