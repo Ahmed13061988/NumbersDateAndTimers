@@ -158,7 +158,11 @@ const calcDisplaySummary = function (acc) {
   const incomes = acc.movements
     .filter(mov => mov > 0)
     .reduce((acc, mov) => acc + mov, 0);
-  labelSumIn.textContent = `${incomes.toFixed(2)}€`;
+  //labelSumIn.textContent = `${incomes.toFixed(2)}€`;
+  labelSumIn.textContent = new Intl.NumberFormat(acc.locale, {
+    style: 'currency',
+    currency: acc.currency,
+  }).format(incomes);
 
   const out = acc.movements
     .filter(mov => mov < 0)
