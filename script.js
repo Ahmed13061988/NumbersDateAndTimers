@@ -298,6 +298,7 @@ const options = {
   day: 'numeric',
   month: 'long',
   year: 'numeric',
+  weekday: 'long',
 };
 
 labelDate.textContent = new Intl.DateTimeFormat('en-US', options).format(now);
