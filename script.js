@@ -546,6 +546,7 @@ const options1 = {
   style: 'currency',
   unit: 'celsius',
   currency: 'EUR',
+  //useGrouping: false,
 };
 console.log('US:', new Intl.NumberFormat('en-US', options1).format(num));
 console.log('Germany:', new Intl.NumberFormat('de-DE', options1).format(num));
