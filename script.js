@@ -301,7 +301,9 @@ const options = {
   weekday: 'long',
 };
 
-labelDate.textContent = new Intl.DateTimeFormat('en-US', options).format(now);
+const locale = navigator.language;
+console.log(locale);
+labelDate.textContent = new Intl.DateTimeFormat(locale, options).format(now);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // LECTURES
