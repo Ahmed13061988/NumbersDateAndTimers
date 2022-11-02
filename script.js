@@ -82,20 +82,34 @@ const inputClosePin = document.querySelector('.form__input--pin');
 // Functions
 
 const formatMovementDate = function (date) {
-  const calcDaysDiff = (date1, date2) =>
-    Math.round(Math.abs(date2 - date1) / (1000 * 60 * 60 * 24));
+  // const calcDaysDiff = (date1, date2) =>
+  //   Math.round(Math.abs(date2 - date1) / (1000 * 60 * 60 * 24));
 
-  const dayPassed = calcDaysDiff(new Date(), date);
-  console.log(dayPassed);
-  if (dayPassed === 0) return 'Today';
-  if (dayPassed === 1) return 'Yesterday';
-  if (dayPassed <= 7) return `${dayPassed} days ago`;
-  else {
-    const day = `${date.getDate()}`.padStart(2, 0);
-    const month = `${date.getMonth() + 1}`.padStart(2, 0);
-    const year = date.getFullYear();
-    return `${day}/${month}/${year}`;
-  }
+  // const dayPassed = calcDaysDiff(new Date(), date);
+  // console.log(dayPassed);
+  // if (dayPassed === 0) return 'Today';
+  // if (dayPassed === 1) return 'Yesterday';
+  // if (dayPassed <= 7) return `${dayPassed} days ago`;
+  // else {
+  //   const day = `${date.getDate()}`.padStart(2, 0);
+  //   const month = `${date.getMonth() + 1}`.padStart(2, 0);
+  //   const year = date.getFullYear();
+  //   return `${day}/${month}/${year}`;
+  // }
+  const now = new Date();
+
+  const options = {
+    hour: 'numeric',
+    minute: 'numeric',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    weekday: 'long',
+  };
+
+  const locale = navigator.language;
+  console.log(locale);
+  labelDate.textContent = new Intl.DateTimeFormat(locale, options).format(now);
 };
 
 const displayMovements = function (acc, sort = false) {
@@ -290,20 +304,6 @@ btnSort.addEventListener('click', function (e) {
 });
 
 //Experimenting with API
-const now = new Date();
-
-const options = {
-  hour: 'numeric',
-  minute: 'numeric',
-  day: 'numeric',
-  month: 'long',
-  year: 'numeric',
-  weekday: 'long',
-};
-
-const locale = navigator.language;
-console.log(locale);
-labelDate.textContent = new Intl.DateTimeFormat(locale, options).format(now);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // LECTURES
