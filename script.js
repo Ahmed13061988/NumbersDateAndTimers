@@ -543,8 +543,9 @@ const num = 388476.33;
 navigator.language;
 
 const options1 = {
-  style: 'unit',
-  unit: 'mile-per-hour',
+  style: 'currency',
+  unit: 'celsius',
+  currency: 'EUR',
 };
 console.log('US:', new Intl.NumberFormat('en-US', options1).format(num));
 console.log('Germany:', new Intl.NumberFormat('de-DE', options1).format(num));
