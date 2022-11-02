@@ -291,12 +291,13 @@ btnSort.addEventListener('click', function (e) {
 
 //Experimenting with API
 const now = new Date();
+labelDate.textContent = new Intl.DateTimeFormat('en-US');
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
 
-console.log(23 === 23.0);
+Intl.console.log(23 === 23.0);
 //All numbers in JavaScript are decimal
 
 console.log(0.1 + 0.2);
