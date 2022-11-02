@@ -177,7 +177,11 @@ const calcDisplaySummary = function (acc) {
       return int >= 1;
     })
     .reduce((acc, int) => acc + int, 0);
-  labelSumInterest.textContent = `${interest.toFixed(2)}€`;
+  //labelSumInterest.textContent = `${interest.toFixed(2)}€`;
+  labelSumInterest.textContent = new Intl.NumberFormat(acc.locale, {
+    style: 'currency',
+    currency: acc.currency,
+  }).format(interest);
 };
 
 const createUsernames = function (accs) {
