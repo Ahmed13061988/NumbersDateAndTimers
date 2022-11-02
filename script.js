@@ -538,3 +538,7 @@ console.log(+future); // --> THIS WILL BE CONVERTED INTO MILLISECONDS
 //Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
 
 //const days1 = calcDaysDiff(new Date(2037, 3, 14), new Date(2037, 3, 24));
+
+const num = 388476.33;
+
+console.log('US:', new Intl.NumberFormat('en-US').format(num));
