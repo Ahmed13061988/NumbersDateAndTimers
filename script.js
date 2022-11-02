@@ -291,7 +291,7 @@ btnSort.addEventListener('click', function (e) {
 
 //Experimenting with API
 const now = new Date();
-labelDate.textContent = new Intl.DateTimeFormat('ar-Iq').format(now);
+labelDate.textContent = new Intl.DateTimeFormat('en-US').format(now);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // LECTURES
