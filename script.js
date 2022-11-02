@@ -289,6 +289,9 @@ btnSort.addEventListener('click', function (e) {
   sorted = !sorted;
 });
 
+//Experimenting with API
+const now = new Date();
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
