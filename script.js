@@ -593,5 +593,6 @@ setInterval(function () {
   const now = new Date();
   const hour = now.getHours();
   const minutes = now.getMinutes();
-  console.log(`${hour}:${minutes}`);
+  const seconds = now.getSeconds();
+  console.log(`${hour}:${minutes}: ${seconds}`);
 }, 1000);
