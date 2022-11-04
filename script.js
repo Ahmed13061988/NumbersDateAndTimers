@@ -575,3 +575,4 @@ const options1 = {
 // console.log('US:', new Intl.NumberFormat(navigator.language).format(num));
 
 setTimeout(() => console.log('Here is your pizza 🍕'), 3000);
+console.log('Waiting...');
