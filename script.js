@@ -582,5 +582,5 @@ const pizzaTimer = setTimeout(
   ...ingredients
 );
 
-if (ingredients.includes('spinach')) clearTimeout();
+if (ingredients.includes('spinach')) clearTimeout(pizzaTimer);
 console.log('Waiting...');
