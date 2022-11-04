@@ -574,5 +574,10 @@ const options1 = {
 // console.log('Syria:', new Intl.NumberFormat('ar-SY', options1).format(num));
 // console.log('US:', new Intl.NumberFormat(navigator.language).format(num));
 
-setTimeout(() => console.log('Here is your pizza 🍕'), 3000);
+setTimeout(
+  (ing1, ing2) => console.log(`Here is your pizza 🍕 with ${ing1} and ${ing2}`),
+  3000,
+  'olives',
+  'spinach'
+);
 console.log('Waiting...');
