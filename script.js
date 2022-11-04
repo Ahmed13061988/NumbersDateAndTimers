@@ -167,7 +167,11 @@ const calcDisplaySummary = function (acc) {
   const out = acc.movements
     .filter(mov => mov < 0)
     .reduce((acc, mov) => acc + mov, 0);
-  labelSumOut.textContent = `${Math.abs(out.toFixed(2))}€`;
+  //labelSumOut.textContent = `${Math.abs(out.toFixed(2))}€`;
+  labelSumOut.textContent = new Intl.NumberFormat(acc.locale, {
+    style: 'currency',
+    currency: acc.currency,
+  }).format(out);
 
   const interest = acc.movements
     .filter(mov => mov > 0)
@@ -565,7 +569,9 @@ const options1 = {
   currency: 'EUR',
   //useGrouping: false,
 };
-console.log('US:', new Intl.NumberFormat('en-US', options1).format(num));
-console.log('Germany:', new Intl.NumberFormat('de-DE', options1).format(num));
-console.log('Syria:', new Intl.NumberFormat('ar-SY', options1).format(num));
-console.log('US:', new Intl.NumberFormat(navigator.language).format(num));
+// console.log('US:', new Intl.NumberFormat('en-US', options1).format(num));
+// console.log('Germany:', new Intl.NumberFormat('de-DE', options1).format(num));
+// console.log('Syria:', new Intl.NumberFormat('ar-SY', options1).format(num));
+// console.log('US:', new Intl.NumberFormat(navigator.language).format(num));
+
+setTimeout(() => console.log('Here is your pizza 🍕'));
