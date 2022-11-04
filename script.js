@@ -576,6 +576,7 @@ const options1 = {
 // console.log('Syria:', new Intl.NumberFormat('ar-SY', options1).format(num));
 // console.log('US:', new Intl.NumberFormat(navigator.language).format(num));
 
+//setTimeout
 const ingredients = ['olives', ''];
 
 const pizzaTimer = setTimeout(
@@ -586,3 +587,9 @@ const pizzaTimer = setTimeout(
 
 if (ingredients.includes('spinach')) clearTimeout(pizzaTimer);
 console.log('Waiting...');
+
+//setInterval
+setInterval(function () {
+  const now = new Date();
+  console.log(now);
+}, 100000);
