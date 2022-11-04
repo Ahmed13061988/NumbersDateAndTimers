@@ -591,5 +591,7 @@ console.log('Waiting...');
 //setInterval
 setInterval(function () {
   const now = new Date();
-  console.log(now);
-}, 100000);
+  const hour = now.getHours();
+  const minutes = now.getMinutes();
+  console.log(`${hour}:${minutes}`);
+}, 1000);
