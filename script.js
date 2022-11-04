@@ -300,12 +300,14 @@ btnLoan.addEventListener('click', function (e) {
 
   if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
     // Add movement
-    currentAccount.movements.push(amount);
+    setTimeout(function () {
+      currentAccount.movements.push(amount);
 
-    currentAccount.movementsDates.push(new Date().toISOString());
+      currentAccount.movementsDates.push(new Date().toISOString());
 
-    // Update UI
-    updateUI(currentAccount);
+      // Update UI
+      updateUI(currentAccount);
+    }, 4000);
   }
   inputLoanAmount.value = '';
 });
@@ -574,7 +576,7 @@ const options1 = {
 // console.log('Syria:', new Intl.NumberFormat('ar-SY', options1).format(num));
 // console.log('US:', new Intl.NumberFormat(navigator.language).format(num));
 
-const ingredients = ['olives', 'spinach'];
+const ingredients = ['olives', ''];
 
 const pizzaTimer = setTimeout(
   (ing1, ing2) => console.log(`Here is your pizza 🍕 with ${ing1} and ${ing2}`),
