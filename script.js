@@ -210,6 +210,12 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 
+const startLogOutTimer = function () {
+  //Set the time to 5 minutes
+  //Call the timer every second
+  //In each call, print the remaining time to UI
+};
+
 ///////////////////////////////////////
 // Event handlers
 let currentAccount;
@@ -589,10 +595,10 @@ if (ingredients.includes('spinach')) clearTimeout(pizzaTimer);
 console.log('Waiting...');
 
 //setInterval
-setInterval(function () {
-  const now = new Date();
-  const hour = now.getHours();
-  const minutes = now.getMinutes();
-  const seconds = now.getSeconds();
-  console.log(`${hour}:${minutes}: ${seconds}`);
-}, 1000);
+// setInterval(function () {
+//   const now = new Date();
+//   const hour = now.getHours();
+//   const minutes = now.getMinutes();
+//   const seconds = now.getSeconds();
+//   console.log(`${hour}:${minutes}: ${seconds}`);
+// }, 1000);
