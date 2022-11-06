@@ -197,12 +197,13 @@ const startLogOutTimer = function () {
     const sec = String(time % 60).padStart(2, 0);
     labelTimer.textContent = `${min}:${sec}`;
     //Decrese 1 s
-    time--;
+
     if (time === 0) {
       clearInterval(timer);
       labelWelcome.textContent = 'Log in to get started';
       containerApp.style.opacity = 0;
     }
+    time--;
   };
   //Set the time to 5 minutes
   let time = 10;
