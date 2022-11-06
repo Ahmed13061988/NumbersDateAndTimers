@@ -212,16 +212,22 @@ const updateUI = function (acc) {
 
 const startLogOutTimer = function () {
   //Set the time to 5 minutes
-  let time = 120;
+  let time = 10;
 
   //Call the timer every second
-  setInterval(function () {
+  const timer = setInterval(function () {
     const min = String(Math.trunc(time / 60)).padStart(2, 0);
     const sec = String(time % 60).padStart(2, 0);
     labelTimer.textContent = `${min}:${sec}`;
     //Decrese 1 s
     time--;
+    if (time === 0) {
+      clearInterval(timer);
+      labelWelcome.textContent = 'Log in to get started';
+      containerApp.style.opacity = 0;
+    }
   }, 1000);
+
   //In each call, print the remaining time to UI
   //When the timer at zero, stop timer and logOut user
 };
