@@ -212,13 +212,13 @@ const updateUI = function (acc) {
 
 const startLogOutTimer = function () {
   //Set the time to 5 minutes
-  let time = 100;
+  let time = 120;
 
   //Call the timer every second
   setInterval(function () {
-    const min = time / 60;
-    const sec = time % 60;
-    labelTimer.textContent = min;
+    const min = String(Math.trunc(time / 60)).padStart(2, 0);
+    const sec = String(time % 60).padStart(2, 0);
+    labelTimer.textContent = `${min}:${sec}`;
     //Decrese 1 s
     time--;
   }, 1000);
