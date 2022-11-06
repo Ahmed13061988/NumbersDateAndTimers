@@ -214,6 +214,7 @@ const startLogOutTimer = function () {
   //Set the time to 5 minutes
   //Call the timer every second
   //In each call, print the remaining time to UI
+  //When the timer at zero, stop timer and logOut user
 };
 
 ///////////////////////////////////////
