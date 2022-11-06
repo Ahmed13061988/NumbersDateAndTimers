@@ -91,27 +91,8 @@ const formatMovementDate = function (date, locale) {
   if (dayPassed === 1) return 'Yesterday';
   if (dayPassed <= 7) return `${dayPassed} days ago`;
   else {
-    // const day = `${date.getDate()}`.padStart(2, 0);
-    // const month = `${date.getMonth() + 1}`.padStart(2, 0);
-    // const year = date.getFullYear();
-    // return `${day}/${month}/${year}`;
     return new Intl.DateTimeFormat(locale).format(date);
   }
-  // const now = new Date();
-
-  // const options = {
-  //   hour: 'numeric',
-  //   minute: 'numeric',
-  //   day: 'numeric',
-  //   month: 'long',
-  //   year: 'numeric',
-  //   weekday: 'long',
-  // };
-
-  // labelDate.textContent = new Intl.DateTimeFormat(
-  //   currentAccount.locale,
-  //   options
-  // ).format(now);
 };
 
 const displayMovements = function (acc, sort = false) {
@@ -211,11 +192,7 @@ const updateUI = function (acc) {
 };
 
 const startLogOutTimer = function () {
-  //Set the time to 5 minutes
-  let time = 10;
-
-  //Call the timer every second
-  const timer = setInterval(function () {
+  const tick = function () {
     const min = String(Math.trunc(time / 60)).padStart(2, 0);
     const sec = String(time % 60).padStart(2, 0);
     labelTimer.textContent = `${min}:${sec}`;
@@ -226,7 +203,13 @@ const startLogOutTimer = function () {
       labelWelcome.textContent = 'Log in to get started';
       containerApp.style.opacity = 0;
     }
-  }, 1000);
+  };
+  //Set the time to 5 minutes
+  let time = 10;
+
+  //Call the timer every second
+  tick();
+  const timer = setInterval(tick, 1000);
 
   //In each call, print the remaining time to UI
   //When the timer at zero, stop timer and logOut user
@@ -237,9 +220,9 @@ const startLogOutTimer = function () {
 let currentAccount;
 
 //Fake always logged in
-currentAccount = account1;
-updateUI(currentAccount);
-containerApp.style.opacity = 100;
+// currentAccount = account1;
+// updateUI(currentAccount);
+// containerApp.style.opacity = 100;
 
 btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
